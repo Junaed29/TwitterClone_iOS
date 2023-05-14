@@ -9,7 +9,21 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-        Text("Home")
+        ScrollView(.vertical, showsIndicators: false) {
+            LazyVStack(spacing: 10) {
+                
+                TwitterListCell(imageUrl: "https://i.insider.com/61d80838d21c1e0019ee291d?width=1136&format=jpeg")
+                Divider()
+                
+                ForEach(1...20, id: \.self) { _ in
+                    TwitterListCell()
+                    Divider()
+                }
+            }
+            .zIndex(0)
+            
+            
+        }
     }
 }
 

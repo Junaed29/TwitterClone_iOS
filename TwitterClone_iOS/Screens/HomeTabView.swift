@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeTabView: View {
+    @State private var showCreateTweet = false
+    
     var body: some View {
         VStack {
             ZStack(alignment: .bottom) {
@@ -41,15 +43,16 @@ struct HomeTabView: View {
                     Spacer()
                     
                     Button {
-                        //
+                        showCreateTweet.toggle()
                     } label: {
                         TweetButtonView().padding(.trailing, 20)
                     }
 
                 }.padding(.bottom, 75)
-                
-                
             }
+        }
+        .sheet(isPresented: $showCreateTweet) {
+            CreateTweetView()
         }
     }
 }
