@@ -9,7 +9,14 @@ import SwiftUI
 
 struct MessagesView: View {
     var body: some View {
-        Text("Messages")
+        ScrollView {
+            LazyVStack {
+                ForEach(0..<10, id: \.self) { _ in
+                    MessageCell()
+                    Divider()
+                }
+            }
+        }
     }
 }
 

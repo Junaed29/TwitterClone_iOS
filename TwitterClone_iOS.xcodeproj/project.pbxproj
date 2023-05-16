@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40E061D2A11F2A80027B5AB /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40E061C2A11F2A80027B5AB /* TopBar.swift */; };
+		E40E061F2A11F46F0027B5AB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40E061E2A11F46F0027B5AB /* MainView.swift */; };
+		E4A663DB2A11E81E0018CBD9 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A663DA2A11E81E0018CBD9 /* NotificationCell.swift */; };
+		E4A663DD2A11EC320018CBD9 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A663DC2A11EC320018CBD9 /* MessageCell.swift */; };
 		E4DF04902A108E67002979B7 /* CreateTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF048F2A108E67002979B7 /* CreateTweetView.swift */; };
 		E4DF04922A10A3F6002979B7 /* TwitterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF04912A10A3F6002979B7 /* TwitterListCell.swift */; };
 		E4DF04952A10B59C002979B7 /* HashtagStyledTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF04942A10B59C002979B7 /* HashtagStyledTextView.swift */; };
@@ -16,7 +20,7 @@
 		E4DF049D2A114731002979B7 /* SearchUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF049C2A114731002979B7 /* SearchUserCell.swift */; };
 		E4DF049F2A114935002979B7 /* UiApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF049E2A114935002979B7 /* UiApplication+Ext.swift */; };
 		E4FD18F12A0FBD4B00AE72BC /* TwitterClone_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD18F02A0FBD4B00AE72BC /* TwitterClone_iOSApp.swift */; };
-		E4FD18F32A0FBD4B00AE72BC /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD18F22A0FBD4B00AE72BC /* HomeTabView.swift */; };
+		E4FD18F32A0FBD4B00AE72BC /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD18F22A0FBD4B00AE72BC /* MainTabView.swift */; };
 		E4FD18F52A0FBD4D00AE72BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FD18F42A0FBD4D00AE72BC /* Assets.xcassets */; };
 		E4FD18F82A0FBD4D00AE72BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FD18F72A0FBD4D00AE72BC /* Preview Assets.xcassets */; };
 		E4FD190A2A0FC19000AE72BC /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FD19052A0FC18F00AE72BC /* Date+Ext.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E40E061C2A11F2A80027B5AB /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		E40E061E2A11F46F0027B5AB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E4A663DA2A11E81E0018CBD9 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		E4A663DC2A11EC320018CBD9 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		E4DF048F2A108E67002979B7 /* CreateTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTweetView.swift; sourceTree = "<group>"; };
 		E4DF04912A10A3F6002979B7 /* TwitterListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterListCell.swift; sourceTree = "<group>"; };
 		E4DF04942A10B59C002979B7 /* HashtagStyledTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashtagStyledTextView.swift; sourceTree = "<group>"; };
@@ -49,7 +57,7 @@
 		E4DF049E2A114935002979B7 /* UiApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiApplication+Ext.swift"; sourceTree = "<group>"; };
 		E4FD18ED2A0FBD4B00AE72BC /* TwitterClone_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FD18F02A0FBD4B00AE72BC /* TwitterClone_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterClone_iOSApp.swift; sourceTree = "<group>"; };
-		E4FD18F22A0FBD4B00AE72BC /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		E4FD18F22A0FBD4B00AE72BC /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		E4FD18F42A0FBD4D00AE72BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4FD18F72A0FBD4D00AE72BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E4FD19052A0FC18F00AE72BC /* Date+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
@@ -82,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E40E061B2A11F24D0027B5AB /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E4FD18F22A0FBD4B00AE72BC /* MainTabView.swift */,
+				E40E061C2A11F2A80027B5AB /* TopBar.swift */,
+				E40E061E2A11F46F0027B5AB /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		E4DF04932A10B582002979B7 /* TextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +189,7 @@
 		E4FD19032A0FC13800AE72BC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				E4FD18F22A0FBD4B00AE72BC /* HomeTabView.swift */,
+				E40E061B2A11F24D0027B5AB /* Main */,
 				E4FD19472A0FCB5400AE72BC /* Feed */,
 				E4FD19462A0FCB4B00AE72BC /* Search */,
 				E4FD19452A0FCB3E00AE72BC /* Notifications */,
@@ -236,6 +254,8 @@
 				E4DF04912A10A3F6002979B7 /* TwitterListCell.swift */,
 				E4DF04982A1136B9002979B7 /* SearchCellView.swift */,
 				E4DF049C2A114731002979B7 /* SearchUserCell.swift */,
+				E4A663DA2A11E81E0018CBD9 /* NotificationCell.swift */,
+				E4A663DC2A11EC320018CBD9 /* MessageCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -387,6 +407,7 @@
 				E4DF049D2A114731002979B7 /* SearchUserCell.swift in Sources */,
 				E4FD19122A0FC1EE00AE72BC /* NetworkError.swift in Sources */,
 				E4FD19222A0FC2E400AE72BC /* SimpleButtonView.swift in Sources */,
+				E40E061D2A11F2A80027B5AB /* TopBar.swift in Sources */,
 				E4FD19152A0FC1EE00AE72BC /* UrlConstant.swift in Sources */,
 				E4FD190D2A0FC19000AE72BC /* AlertItem.swift in Sources */,
 				E4DF049F2A114935002979B7 /* UiApplication+Ext.swift in Sources */,
@@ -394,17 +415,20 @@
 				E4DF049B2A113958002979B7 /* SearchBar.swift in Sources */,
 				E4FD194D2A0FD07000AE72BC /* NotificationsView.swift in Sources */,
 				E4DF04902A108E67002979B7 /* CreateTweetView.swift in Sources */,
-				E4FD18F32A0FBD4B00AE72BC /* HomeTabView.swift in Sources */,
+				E4FD18F32A0FBD4B00AE72BC /* MainTabView.swift in Sources */,
 				E4FD19242A0FC2E400AE72BC /* RemoteImage.swift in Sources */,
 				E4FD19132A0FC1EE00AE72BC /* NetworkManager.swift in Sources */,
 				E4DF04952A10B59C002979B7 /* HashtagStyledTextView.swift in Sources */,
+				E4A663DD2A11EC320018CBD9 /* MessageCell.swift in Sources */,
 				E4FD190B2A0FC19000AE72BC /* String+Ext.swift in Sources */,
 				E4DF04972A10BA20002979B7 /* CircularImageView.swift in Sources */,
+				E4A663DB2A11E81E0018CBD9 /* NotificationCell.swift in Sources */,
 				E4FD19512A0FD5ED00AE72BC /* TweetButtonView.swift in Sources */,
 				E4FD19492A0FD04A00AE72BC /* FeedView.swift in Sources */,
 				E4FD19212A0FC2E400AE72BC /* EmptyState.swift in Sources */,
 				E4FD194B2A0FD05D00AE72BC /* SearchView.swift in Sources */,
 				E4FD18F12A0FBD4B00AE72BC /* TwitterClone_iOSApp.swift in Sources */,
+				E40E061F2A11F46F0027B5AB /* MainView.swift in Sources */,
 				E4FD190C2A0FC19000AE72BC /* Color+Ext.swift in Sources */,
 				E4FD19232A0FC2E400AE72BC /* XDismissButtonView.swift in Sources */,
 			);

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeTabView: View {
+struct MainTabView: View {
     @State private var showCreateTweet = false
     
     var body: some View {
@@ -46,9 +46,8 @@ struct HomeTabView: View {
                         showCreateTweet.toggle()
                     } label: {
                         TweetButtonView().padding(.trailing, 20)
-                    }
-
-                }.padding(.bottom, 75)
+                    }.padding(.bottom, 75)
+                }
             }
         }
         .sheet(isPresented: $showCreateTweet) {
@@ -59,6 +58,6 @@ struct HomeTabView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeTabView()
+        MainTabView()
     }
 }

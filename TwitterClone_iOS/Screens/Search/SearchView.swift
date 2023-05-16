@@ -26,7 +26,9 @@ struct SearchView: View {
                     SearchCell(tweets: String(i))
                 }
             }
-        }.listStyle(.plain)
+        }
+        .padding(.top)
+        .listStyle(.plain)
     }
 }
 
