@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E40E061D2A11F2A80027B5AB /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40E061C2A11F2A80027B5AB /* TopBar.swift */; };
 		E40E061F2A11F46F0027B5AB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40E061E2A11F46F0027B5AB /* MainView.swift */; };
+		E483BC7D2A13D5DF00B1833F /* SlideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483BC7C2A13D5DF00B1833F /* SlideMenuView.swift */; };
+		E483BC7F2A13D7F200B1833F /* FollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483BC7E2A13D7F200B1833F /* FollowView.swift */; };
+		E483BC812A13DC1800B1833F /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483BC802A13DC1800B1833F /* MenuButtonView.swift */; };
 		E4A663DB2A11E81E0018CBD9 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A663DA2A11E81E0018CBD9 /* NotificationCell.swift */; };
 		E4A663DD2A11EC320018CBD9 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A663DC2A11EC320018CBD9 /* MessageCell.swift */; };
 		E4DF04902A108E67002979B7 /* CreateTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DF048F2A108E67002979B7 /* CreateTweetView.swift */; };
@@ -45,6 +48,9 @@
 /* Begin PBXFileReference section */
 		E40E061C2A11F2A80027B5AB /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		E40E061E2A11F46F0027B5AB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E483BC7C2A13D5DF00B1833F /* SlideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuView.swift; sourceTree = "<group>"; };
+		E483BC7E2A13D7F200B1833F /* FollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowView.swift; sourceTree = "<group>"; };
+		E483BC802A13DC1800B1833F /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
 		E4A663DA2A11E81E0018CBD9 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		E4A663DC2A11EC320018CBD9 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		E4DF048F2A108E67002979B7 /* CreateTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTweetView.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 				E4FD18F22A0FBD4B00AE72BC /* MainTabView.swift */,
 				E40E061C2A11F2A80027B5AB /* TopBar.swift */,
 				E40E061E2A11F46F0027B5AB /* MainView.swift */,
+				E483BC7C2A13D5DF00B1833F /* SlideMenuView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -182,6 +189,7 @@
 				E4FD19162A0FC2E300AE72BC /* Empty States */,
 				E4FD191B2A0FC2E400AE72BC /* Image */,
 				E4FD191F2A0FC2E400AE72BC /* UIKit Component */,
+				E483BC7E2A13D7F200B1833F /* FollowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 				E4FD19192A0FC2E400AE72BC /* SimpleButtonView.swift */,
 				E4FD191A2A0FC2E400AE72BC /* XDismissButtonView.swift */,
 				E4FD19502A0FD5ED00AE72BC /* TweetButtonView.swift */,
+				E483BC802A13DC1800B1833F /* MenuButtonView.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -415,6 +424,7 @@
 				E4DF049B2A113958002979B7 /* SearchBar.swift in Sources */,
 				E4FD194D2A0FD07000AE72BC /* NotificationsView.swift in Sources */,
 				E4DF04902A108E67002979B7 /* CreateTweetView.swift in Sources */,
+				E483BC7D2A13D5DF00B1833F /* SlideMenuView.swift in Sources */,
 				E4FD18F32A0FBD4B00AE72BC /* MainTabView.swift in Sources */,
 				E4FD19242A0FC2E400AE72BC /* RemoteImage.swift in Sources */,
 				E4FD19132A0FC1EE00AE72BC /* NetworkManager.swift in Sources */,
@@ -424,7 +434,9 @@
 				E4DF04972A10BA20002979B7 /* CircularImageView.swift in Sources */,
 				E4A663DB2A11E81E0018CBD9 /* NotificationCell.swift in Sources */,
 				E4FD19512A0FD5ED00AE72BC /* TweetButtonView.swift in Sources */,
+				E483BC7F2A13D7F200B1833F /* FollowView.swift in Sources */,
 				E4FD19492A0FD04A00AE72BC /* FeedView.swift in Sources */,
+				E483BC812A13DC1800B1833F /* MenuButtonView.swift in Sources */,
 				E4FD19212A0FC2E400AE72BC /* EmptyState.swift in Sources */,
 				E4FD194B2A0FD05D00AE72BC /* SearchView.swift in Sources */,
 				E4FD18F12A0FBD4B00AE72BC /* TwitterClone_iOSApp.swift in Sources */,
