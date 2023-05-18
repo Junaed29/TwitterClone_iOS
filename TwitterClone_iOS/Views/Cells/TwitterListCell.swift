@@ -13,12 +13,11 @@ struct TwitterListCell: View {
 
     
     var body: some View {
-        HStack(alignment: .top){
+        HStack(alignment: .top,spacing: 10){
             CircularImageView(imageName: "logo")
-                .padding(.trailing,4)
-                .frame(width: 60, height: 60)
+                .frame(width:50, height: 50)
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 10) {
                 HStack{
                     Text("Junaed")
                         .bold()
@@ -28,62 +27,68 @@ struct TwitterListCell: View {
                     Text("@junaed29")
                         .font(.subheadline)
                         .foregroundColor(.gray)
-                }.padding(.bottom,4)
+                }
 
                 HashtagStyledTextView(text: text)
                     .lineLimit(5)
 
                 
                 if let imageUrl {
-                    LoadImageFromUrl(urlString: imageUrl, placeHolderImageName: "Twitter")
-                        .aspectRatio(contentMode: .fill)
-                        .frame(maxHeight: 250, alignment: .leading)
-                        .cornerRadius(15)
+     
+                    GeometryReader{ proxy in
+            
+                        LoadImageFromUrl(urlString: imageUrl, placeHolderImageName: "Twitter")
+                            .frame(width: proxy.frame(in: .global).width, height: 250)
+                            .cornerRadius(15)
+                    }
+                    .frame(height: 250)
                 }
                 
-                HStack {
-                    Button {
-                        //
-                    } label: {
-                        Image(systemName: "message").frame(width: 60)
-                    }
-                    
-                    
-                    Spacer()
-                    
-                    Button {
-                        //
-                    } label: {
-                        Image(systemName: "repeat").frame(width: 60)
-                           
-                    }
-                    
-                    Spacer()
-                    
-                    Button {
-                        //
-                    } label: {
-                        Image(systemName: "heart").frame(width: 60)
-                            
-                    }
-                    
-                    Spacer()
-                    
-                    Button {
-                        //
-                    } label: {
-                        Image(systemName: "square.and.arrow.up").frame(width: 60)
-                    }
-                    
-                    Spacer()
-                    
-                }
-                .padding(.top)
-                .font(.title2)
-                .foregroundColor(.gray)
+                // Cell Bottom
                 
-            }.padding(.leading,4)
-        }.padding()
+                
+                HStack(spacing : 50) {
+                    
+                    Button(action: {
+                        
+                    }) {
+                        
+                        Image("Comments").resizable().frame(width: 16, height: 16)
+                        
+                    }.foregroundColor(.gray)
+                    
+                    Button(action: {
+                        
+                    }) {
+                        
+                        Image("Retweet").resizable().frame(width: 18, height: 14)
+                        
+                    }.foregroundColor(.gray)
+                    
+                    Button(action: {
+                        
+                    }) {
+                        
+                        Image("love").resizable().frame(width: 18, height: 15)
+                        
+                    }.foregroundColor(.gray)
+                    
+                    Button(action: {
+                        
+                    }) {
+                        
+                        Image("upload").resizable().renderingMode(.template).frame(width: 16, height: 16)
+                        
+                    }.foregroundColor(.gray)
+                }
+                .padding(.top, 4)
+                .padding(.leading)
+                
+            }
+        }
+        .padding(.horizontal)
+        .padding(.vertical, 5)
+      
     }
 
 }

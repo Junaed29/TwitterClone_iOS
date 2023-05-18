@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		E40E061D2A11F2A80027B5AB /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40E061C2A11F2A80027B5AB /* TopBar.swift */; };
 		E40E061F2A11F46F0027B5AB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40E061E2A11F46F0027B5AB /* MainView.swift */; };
+		E436E4032A1561DC001EABA3 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436E4022A1561DC001EABA3 /* ProfileHeaderView.swift */; };
+		E436E4082A15DEEF001EABA3 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436E4052A15DEEF001EABA3 /* TabButton.swift */; };
+		E436E4092A15DEEF001EABA3 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436E4062A15DEEF001EABA3 /* BlurView.swift */; };
+		E436E40E2A15E375001EABA3 /* ProfileBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436E40D2A15E375001EABA3 /* ProfileBodyView.swift */; };
+		E436E4102A15E64D001EABA3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E436E40F2A15E64D001EABA3 /* ProfileView.swift */; };
+		E436E4132A15E71A001EABA3 /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = E436E4122A15E71A001EABA3 /* ScalingHeaderScrollView */; };
 		E483BC7D2A13D5DF00B1833F /* SlideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483BC7C2A13D5DF00B1833F /* SlideMenuView.swift */; };
 		E483BC7F2A13D7F200B1833F /* FollowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483BC7E2A13D7F200B1833F /* FollowView.swift */; };
 		E483BC812A13DC1800B1833F /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E483BC802A13DC1800B1833F /* MenuButtonView.swift */; };
@@ -48,6 +54,11 @@
 /* Begin PBXFileReference section */
 		E40E061C2A11F2A80027B5AB /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		E40E061E2A11F46F0027B5AB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E436E4022A1561DC001EABA3 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		E436E4052A15DEEF001EABA3 /* TabButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		E436E4062A15DEEF001EABA3 /* BlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		E436E40D2A15E375001EABA3 /* ProfileBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBodyView.swift; sourceTree = "<group>"; };
+		E436E40F2A15E64D001EABA3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E483BC7C2A13D5DF00B1833F /* SlideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuView.swift; sourceTree = "<group>"; };
 		E483BC7E2A13D7F200B1833F /* FollowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowView.swift; sourceTree = "<group>"; };
 		E483BC802A13DC1800B1833F /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
@@ -90,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E436E4132A15E71A001EABA3 /* ScalingHeaderScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +284,7 @@
 		E4FD191F2A0FC2E400AE72BC /* UIKit Component */ = {
 			isa = PBXGroup;
 			children = (
+				E436E4062A15DEEF001EABA3 /* BlurView.swift */,
 				E4FD19202A0FC2E400AE72BC /* ActivityIndicator.swift */,
 			);
 			path = "UIKit Component";
@@ -280,6 +293,10 @@
 		E4FD19402A0FCB0600AE72BC /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				E436E4052A15DEEF001EABA3 /* TabButton.swift */,
+				E436E4022A1561DC001EABA3 /* ProfileHeaderView.swift */,
+				E436E40D2A15E375001EABA3 /* ProfileBodyView.swift */,
+				E436E40F2A15E64D001EABA3 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -355,6 +372,9 @@
 			dependencies = (
 			);
 			name = TwitterClone_iOS;
+			packageProductDependencies = (
+				E436E4122A15E71A001EABA3 /* ScalingHeaderScrollView */,
+			);
 			productName = TwitterClone_iOS;
 			productReference = E4FD18ED2A0FBD4B00AE72BC /* TwitterClone_iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -383,6 +403,9 @@
 				Base,
 			);
 			mainGroup = E4FD18E42A0FBD4A00AE72BC;
+			packageReferences = (
+				E436E4112A15E71A001EABA3 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
+			);
 			productRefGroup = E4FD18EE2A0FBD4B00AE72BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -413,13 +436,16 @@
 				E4FD19262A0FC2E400AE72BC /* ActivityIndicator.swift in Sources */,
 				E4DF04922A10A3F6002979B7 /* TwitterListCell.swift in Sources */,
 				E4FD194F2A0FD08C00AE72BC /* MessagesView.swift in Sources */,
+				E436E4092A15DEEF001EABA3 /* BlurView.swift in Sources */,
 				E4DF049D2A114731002979B7 /* SearchUserCell.swift in Sources */,
 				E4FD19122A0FC1EE00AE72BC /* NetworkError.swift in Sources */,
 				E4FD19222A0FC2E400AE72BC /* SimpleButtonView.swift in Sources */,
 				E40E061D2A11F2A80027B5AB /* TopBar.swift in Sources */,
 				E4FD19152A0FC1EE00AE72BC /* UrlConstant.swift in Sources */,
+				E436E4082A15DEEF001EABA3 /* TabButton.swift in Sources */,
 				E4FD190D2A0FC19000AE72BC /* AlertItem.swift in Sources */,
 				E4DF049F2A114935002979B7 /* UiApplication+Ext.swift in Sources */,
+				E436E4102A15E64D001EABA3 /* ProfileView.swift in Sources */,
 				E4DF04992A1136B9002979B7 /* SearchCellView.swift in Sources */,
 				E4DF049B2A113958002979B7 /* SearchBar.swift in Sources */,
 				E4FD194D2A0FD07000AE72BC /* NotificationsView.swift in Sources */,
@@ -439,8 +465,10 @@
 				E483BC812A13DC1800B1833F /* MenuButtonView.swift in Sources */,
 				E4FD19212A0FC2E400AE72BC /* EmptyState.swift in Sources */,
 				E4FD194B2A0FD05D00AE72BC /* SearchView.swift in Sources */,
+				E436E40E2A15E375001EABA3 /* ProfileBodyView.swift in Sources */,
 				E4FD18F12A0FBD4B00AE72BC /* TwitterClone_iOSApp.swift in Sources */,
 				E40E061F2A11F46F0027B5AB /* MainView.swift in Sources */,
+				E436E4032A1561DC001EABA3 /* ProfileHeaderView.swift in Sources */,
 				E4FD190C2A0FC19000AE72BC /* Color+Ext.swift in Sources */,
 				E4FD19232A0FC2E400AE72BC /* XDismissButtonView.swift in Sources */,
 			);
@@ -643,6 +671,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E436E4112A15E71A001EABA3 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ScalingHeaderScrollView";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E436E4122A15E71A001EABA3 /* ScalingHeaderScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E436E4112A15E71A001EABA3 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */;
+			productName = ScalingHeaderScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E4FD18E52A0FBD4A00AE72BC /* Project object */;
 }
